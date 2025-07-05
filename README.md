@@ -92,7 +92,7 @@ The project uses the IMDB Movie Reviews dataset containing 50,000 movie reviews 
 - **Splits**: Automatically divided into train/validation/test sets during pipeline execution
 
 **Data Versioning with DVC:**
-For comprehensive data versioning setup and management, we maintain a separate DVC repository. Please refer to our dedicated DVC guide: [📋 DVC & MinIO Setup Repository](https://github.com/nth4002/Sentiment_Analysis_with_MLOps) (contains detailed [dvc.md](https://github.com/nth4002/Sentiment_Analysis_with_MLOps/blob/main/dvc.md) documentation)
+For comprehensive data versioning setup and management, we maintain a separate DVC repository. Please refer to our dedicated DVC guide: [📋 DVC & MinIO Setup Repository](https://github.com/nth4002/Sentiment_Analysis_with_MLOps) (contains detailed [README for DVC](https://github.com/nth4002/Sentiment_Analysis_with_MLOps/blob/main/README.md) documentation)
 
 This implementation includes:
 - Git-like versioning for large datasets
