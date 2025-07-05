@@ -1,16 +1,56 @@
+<p align="center">
+  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: 5;">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+  </a>
+</p>
+
+<!-- Title -->
+<h1 align="center"><b>CS317.P21 - MACHINE LEARNING SYSTEMS DEVELOPMENT AND OPERATIONS</b></h1>
+
 # MLOps Getting Started
 
 A comprehensive MLOps project implementing sentiment analysis with traditional machine learning and deep learning models, featuring complete containerization, deployment, and monitoring capabilities.
 
-**Academic Project Information:**
-- **Course**: CS317.P21 - Machine Learning Systems Development and Operations
-- **Institution**: University of Information Technology (UIT), Vietnam National University - Ho Chi Minh City
-- **Supervisor**: MSc. Đỗ Văn Tiến
-- **Team Members**: 
-  - Võ Đình Trung - 22521571
-  - Nguyễn Thanh Hùng - 22520518  
-  - Phan Thanh Đăng - 22520193
-- **Academic Year**: 2024-2025
+## TABLE OF CONTENTS
+* [Course Information](#course-information)
+* [Instructor](#instructor)
+* [Team Members](#team-members)
+* [Project Overview](#project-overview)
+* [Features](#features)
+* [Dataset](#dataset)
+* [Project Structure](#project-structure)
+* [Installation](#installation)
+* [Lab 1: ML Development & Experiment Tracking](#lab-1-ml-development--experiment-tracking)
+* [Lab 2: Containerization & Deployment](#lab-2-containerization--deployment)
+* [Lab 3: Monitoring & Observability](#lab-3-monitoring--observability)
+* [Configuration & Customization](#configuration--customization)
+* [Troubleshooting](#troubleshooting)
+* [Requirements](#requirements)
+* [Project Architecture](#project-architecture--implementation-phases)
+* [Future Enhancements](#future-enhancements)
+
+## COURSE INFORMATION
+<a name="course-information"></a>
+* **Course Name**: Machine Learning Systems Development and Operations
+* **Course Code**: CS317
+* **Class Code**: CS317.P21
+* **Academic Year**: 2024-2025
+* **Institution**: University of Information Technology (UIT), Vietnam National University - Ho Chi Minh City
+
+## INSTRUCTOR
+<a name="instructor"></a>
+* MSc. **Đỗ Văn Tiến** - *tiendv@uit.edu.vn*
+
+## TEAM MEMBERS
+<a name="team-members"></a>
+| STT    | MSSV          | Họ và Tên              | Github                                               | Email                   |
+| ------ |:-------------:| ----------------------:|-----------------------------------------------------:|-------------------------:
+| 1      | 22521571      | Võ Đình Trung          | https://github.com/votrung654                       |22521571@gm.uit.edu.vn  |
+| 2      | 22520518      | Nguyễn Thanh Hùng      | https://github.com/nth4002                          |22520518@gm.uit.edu.vn  |
+| 3      | 22520193      | Phan Thanh Đăng        | https://github.com/PTD504                           |22520193@gm.uit.edu.vn  |
+
+## PROJECT OVERVIEW
+<a name="project-overview"></a>
 
 ## 🎯 Overview
 
@@ -716,47 +756,6 @@ This MLOps project is structured into three distinct phases, each building upon 
     │(port 9093)  │
     └─────────────┘
 ```
-
-## 📚 Additional Resources
-
-### Vietnamese Documentation
-This project includes comprehensive Vietnamese documentation for academic purposes:
-
-- **📄 Technical Report** (main_report.tex): Complete technical documentation in Vietnamese including:
-  - Detailed methodology and implementation
-  - Results analysis and evaluation
-  - Architecture diagrams and technical specifications
-  - Academic formatting for course submission
-
-- **📊 Presentation Slides** (main_slide.tex): LaTeX Beamer presentation covering:
-  - Project overview and objectives
-  - Phase-by-phase implementation walkthrough
-  - Technology stack explanations
-  - Live demonstration scripts
-  - Results and conclusions
-
-### External Resources
-- **📋 DVC & Data Versioning**: [DVC Setup Repository](https://github.com/nth4002/Sentiment_Analysis_with_MLOps) - Comprehensive data versioning setup with MinIO
-- **MLflow Documentation**: https://mlflow.org/docs/latest/
-- **FastAPI Documentation**: https://fastapi.tiangolo.com/
-- **Prometheus Documentation**: https://prometheus.io/docs/
-- **Grafana Documentation**: https://grafana.com/docs/
-- **Docker Documentation**: https://docs.docker.com/
-- **Ray Documentation**: https://docs.ray.io/
-- **Optuna Documentation**: https://optuna.readthedocs.io/
-- **Great Expectations Documentation**: https://docs.greatexpectations.io/
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🚀 Future Enhancements
 
