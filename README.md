@@ -7,7 +7,7 @@
 <!-- Title -->
 <h1 align="center"><b>CS317.P21 - MACHINE LEARNING SYSTEMS DEVELOPMENT AND OPERATIONS</b></h1>
 
-# MLOps Getting Started
+# Sentiment Analysis with MLOps
 
 A comprehensive MLOps project implementing sentiment analysis with traditional machine learning and deep learning models, featuring complete containerization, deployment, and monitoring capabilities.
 
