@@ -52,11 +52,11 @@ A comprehensive MLOps project implementing sentiment analysis with traditional m
 ## PROJECT OVERVIEW
 <a name="project-overview"></a>
 
-## 🎯 Overview
+## Overview
 
 This project implements a full MLOps workflow for sentiment analysis, comparing traditional machine learning approaches (Logistic Regression, SVM, Naive Bayes) with deep learning models (LSTM). It includes data preprocessing, model training, hyperparameter optimization, distributed execution, experiment tracking, and model serving via a web API with comprehensive monitoring and observability.
 
-## ✨ Features
+## Features
 
 ### Core ML Capabilities
 - **Data Preprocessing**: Text cleaning, lemmatization, and vectorization with TF-IDF
@@ -81,7 +81,7 @@ This project implements a full MLOps workflow for sentiment analysis, comparing 
 - **Alerting**: Alertmanager for anomaly detection and notifications
 - **Containerization**: Full Docker deployment with monitoring stack
 
-## 📊 Dataset
+## Dataset
 
 The project uses the IMDB Movie Reviews dataset containing 50,000 movie reviews labeled as positive or negative sentiment.
 
@@ -100,7 +100,7 @@ This implementation includes:
 - Data pipeline reproducibility
 - Collaborative data management across team members
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MLOps-getting-started/
@@ -151,7 +151,7 @@ MLOps-getting-started/
 └── mlruns/                        # MLflow experiment tracking data
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - **Python**: 3.9+ (not compatible with Python 3.12 or higher due to certain dependencies)
@@ -193,7 +193,7 @@ pip install -r requirements.txt
    - This provides Git-like versioning for large datasets using MinIO storage
    - Enables collaborative data management and reproducible experiments
 
-## 📈 Lab 1: ML Development & Experiment Tracking
+## Lab 1: ML Development & Experiment Tracking
 
 ### Overview
 Lab 1 focuses on building the core machine learning pipeline with experiment tracking, hyperparameter optimization, and data versioning capabilities.
@@ -281,7 +281,7 @@ Access the MLflow dashboard at http://localhost:5000
 ### Training Process Demo
 - [Training Process Video](https://drive.google.com/file/d/1rPvdYF71s9emmPndpeG6CEJAPC7hnraU/view?usp=sharing)
 
-## 🐳 Lab 2: Containerization & Deployment
+## Lab 2: Containerization & Deployment
 
 ### Overview
 Lab 2 extends the ML models with web API deployment and containerization for production use.
@@ -371,7 +371,7 @@ chmod +x deploy.sh
   - `run_the_service_from_image_n_docker_hub`
 - **Server Deployment Demo**: [Production Deploy Video](https://drive.google.com/file/d/1vAXwRElNjsoeqkng31pU12-9BI4JpP9t/view?usp=drive_link)
 
-## 📊 Lab 3: Monitoring & Observability
+## Lab 3: Monitoring & Observability
 
 ### Overview
 Lab 3 implements comprehensive monitoring and logging solution for the sentiment analysis API with complete observability stack.
@@ -380,29 +380,29 @@ Lab 3 implements comprehensive monitoring and logging solution for the sentiment
 
 With the API built in Lab 2, this project implements complete Monitoring and Logging services with the following requirements:
 
-### 1. Server Resource Monitoring ✅
+### 1. Server Resource Monitoring 
 - **CPU usage**: Monitored via Node Exporter
 - **RAM usage**: Memory utilization tracking
 - **Disk space & Disk IO**: Storage metrics and I/O operations
 - **Network IO**: Total transmitted/received data tracking
 - **GPU usage**: Optional monitoring (implemented when GPU available)
 
-### 2. API Monitoring ✅
+### 2. API Monitoring 
 - **Request per second**: Real-time RPS tracking
 - **Error rate**: HTTP error status monitoring with alerts
 - **Latency**: Request/response time measurement with percentiles
 
-### 3. Model Monitoring ✅
+### 3. Model Monitoring 
 - **Inference speed**: CPU/GPU execution time tracking
 - **Confidence score**: Model prediction confidence with alerts
 
-### 4. Comprehensive Logging ✅
+### 4. Comprehensive Logging 
 - **syslog**: System-level logs for infrastructure issues
 - **stdout**: Console output streams
 - **stderr**: Error traceback logging
 - **logfile**: Application-specific log files
 
-### 5. Alerting System ✅
+### 5. Alerting System 
 - **Error rate alerts**: Triggers when error rate > 50%
 - **Low confidence alerts**: Activates when confidence < 0.6
 - **Resource alerts**: CPU, memory, disk space thresholds
@@ -519,15 +519,15 @@ Alerts are automatically triggered when:
 **Demo Video**: [Lab 3 Monitoring & Logging Demo](https://drive.google.com/file/d/1kz0grRHgfGDE0eng2kFirgOmrQ4-Fk5S/view?usp=sharing)
 
 **Video Content Verification:**
-- ✅ Complete dashboard walkthrough showing all required metrics
-- ✅ traffic_generator.py execution with real-time dashboard updates
-- ✅ Error rate simulation exceeding 50% threshold  
-- ✅ `HighErrorRate` alert progression from "inactive" to "FIRING"
-- ✅ Multi-source log capture (syslog, stdout, stderr) demonstration
-- ✅ Alertmanager UI showing active alerts
-- ✅ All service containers running verification
+- Complete dashboard walkthrough showing all required metrics
+- traffic_generator.py execution with real-time dashboard updates
+- Error rate simulation exceeding 50% threshold  
+- `HighErrorRate` alert progression from "inactive" to "FIRING"
+- Multi-source log capture (syslog, stdout, stderr) demonstration
+- Alertmanager UI showing active alerts
+- All service containers running verification
 
-## 🔧 Configuration & Customization
+## Configuration & Customization
 
 ### Alert Rules Configuration
 
@@ -585,7 +585,7 @@ scrape_configs:
           __path__: /var/log/syslog
 ```
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -648,7 +648,7 @@ sudo lsof -i :3000,8000,9090,9093,9100,3100
 netstat -an | findstr "3000 8000 9090 9093 9100 3100"
 ```
 
-## 📋 Requirements
+## Requirements
 
 ### Core Dependencies
 
@@ -682,11 +682,11 @@ structlog==23.2.0
 
 Complete dependencies list available in requirements.txt.
 
-## 🏗️ Project Architecture & Implementation Phases
+## Project Architecture & Implementation Phases
 
 This MLOps project is structured into three distinct phases, each building upon the previous to create a comprehensive production-ready machine learning system:
 
-### Phase 1: ML Development & Experiment Tracking 🔬
+### Phase 1: ML Development & Experiment Tracking 
 **Objective**: Establish a reproducible, automated, and version-controlled model training pipeline.
 
 **Key Components:**
@@ -697,7 +697,7 @@ This MLOps project is structured into three distinct phases, each building upon 
 - **Model Development**: Comparison of traditional ML (Logistic Regression, SVM, Naive Bayes) vs Deep Learning (Bidirectional LSTM)
 - **Hyperparameter Optimization**: Optuna for systematic parameter tuning
 
-### Phase 2: Containerization & Deployment 🚀
+### Phase 2: Containerization & Deployment 
 **Objective**: Transform trained models into a production-ready API service with proper containerization.
 
 **Key Components:**
@@ -708,7 +708,7 @@ This MLOps project is structured into three distinct phases, each building upon 
 - **CI/CD Pipeline**: Automated Docker Hub publishing and server deployment scripts
 - **Health Monitoring**: API health checks and basic performance metrics
 
-### Phase 3: Comprehensive Monitoring & Observability 📊
+### Phase 3: Comprehensive Monitoring & Observability 
 **Objective**: Implement enterprise-grade monitoring, logging, and alerting for production systems.
 
 **Key Components:**
@@ -719,7 +719,7 @@ This MLOps project is structured into three distinct phases, each building upon 
 - **Alerting System**: Alertmanager for automated notifications and threshold-based alerts
 - **Model Monitoring**: Inference performance and prediction confidence tracking
 
-## 🔧 Technology Stack by Phase
+## Technology Stack by Phase
 
 | Phase | Category | Technologies |
 |-------|----------|-------------|
@@ -730,7 +730,7 @@ This MLOps project is structured into three distinct phases, each building upon 
 | **Phase 3** | Monitoring | Prometheus, Grafana, Node Exporter, AlertManager |
 | | Logging & Alerting | Loki, Promtail, Structured Logging (JSON) |
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────┐    ┌──────────────┐    ┌─────────────────┐
@@ -757,7 +757,7 @@ This MLOps project is structured into three distinct phases, each building upon 
     └─────────────┘
 ```
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 ### Technical Improvements
 - **GPU Monitoring**: Extend Node Exporter with nvidia-docker integration for GPU resource tracking
